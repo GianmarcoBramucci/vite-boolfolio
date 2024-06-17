@@ -9,6 +9,11 @@
             <p>
               {{ project.content }}
             </p>
+            <RouterLink :to="{ name: 'singleProject', params: { 'slug': project.slug } }"  >
+              <button>
+                vai al progetto
+              </button>
+            </RouterLink>
           </li>
         </ul>
     </div>
