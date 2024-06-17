@@ -25,7 +25,7 @@ import axios from 'axios';
                 getProject(){
                     axios.get(this.store.apiBaseUrl+'/projects/'+this.$route.params.slug).then((res)=> {
                     this.project= res.data.results;
-                    console.log(this.projects);
+                    console.log(this.project);
                     });
                 }
             },
